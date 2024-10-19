@@ -35,7 +35,7 @@ import java.io.OutputStreamWriter;
 import java.io.Writer;
 import java.net.URL;
 
-import javax.activation.DataSource;
+import jakarta.activation.DataSource;
 import javax.xml.stream.XMLStreamException;
 
 public class PlainTextFormatter implements MessageFormatterEx {

@@ -21,7 +21,7 @@ package org.apache.axis2.format;
 import java.io.OutputStream;
 import java.net.URL;
 
-import javax.activation.DataSource;
+import jakarta.activation.DataSource;
 
 import org.apache.axiom.attachments.ByteArrayDataSource;
 import org.apache.axiom.om.OMOutputFormat;

@@ -18,7 +18,7 @@
  */
 package org.apache.axis2.format;
 
-import javax.activation.DataSource;
+import jakarta.activation.DataSource;
 
 import org.apache.axiom.om.OMOutputFormat;
 import org.apache.axis2.AxisFault;
