@@ -49,7 +49,7 @@ import org.apache.axis2.util.Utils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-import javax.xml.parsers.FactoryConfigurationError;
+import jakarta.xml.parsers.FactoryConfigurationError;
 import javax.xml.stream.XMLStreamException;
 import java.io.IOException;
 import java.io.InputStream;

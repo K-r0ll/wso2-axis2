@@ -38,7 +38,7 @@ import org.apache.axis2.util.OptionsParser;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-import javax.xml.namespace.QName;
+import jakarta.xml.namespace.QName;
 import java.io.File;
 import java.io.IOException;
 import java.util.Iterator;

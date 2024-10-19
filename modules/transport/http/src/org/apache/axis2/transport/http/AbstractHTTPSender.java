@@ -63,7 +63,7 @@ import org.apache.commons.logging.LogFactory;
 import org.apache.http.HttpHeaders;
 import org.apache.http.protocol.HTTP;
 
-import javax.xml.namespace.QName;
+import jakarta.xml.namespace.QName;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -107,7 +107,8 @@ public abstract class AbstractHTTPSender {
         if (version != null) {
             if (HTTPConstants.HEADER_PROTOCOL_11.equals(version)) {
                 this.httpVersion = HTTPConstants.HEADER_PROTOCOL_11;
-            } else if (HTTPConstants.HEADER_PROTOCOL_10.equals(version)) {
+            } else if (HTTPConstants.HEADER_PROTOCOL_10.equals(version
+                    )) {
                 this.httpVersion = HTTPConstants.HEADER_PROTOCOL_10;
                 // chunked is not possible with HTTP/1.0
                 this.chunked = false;

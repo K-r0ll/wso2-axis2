@@ -25,8 +25,8 @@ import org.apache.axis2.AxisFault;
 import org.apache.axis2.context.MessageContext;
 import org.apache.commons.httpclient.methods.RequestEntity;
 
-import javax.xml.stream.FactoryConfigurationError;
-import javax.xml.stream.XMLStreamException;
+import jakarta.xml.stream.FactoryConfigurationError;
+import jakarta.xml.stream.XMLStreamException;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;

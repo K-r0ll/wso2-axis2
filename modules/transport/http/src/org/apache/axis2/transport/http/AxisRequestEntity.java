@@ -26,7 +26,7 @@ import org.apache.axis2.transport.MessageFormatter;
 import org.apache.axis2.util.JavaUtils;
 import org.apache.commons.httpclient.methods.RequestEntity;
 
-import javax.xml.stream.FactoryConfigurationError;
+import jakarta.xml.stream.FactoryConfigurationError;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.util.zip.GZIPOutputStream;

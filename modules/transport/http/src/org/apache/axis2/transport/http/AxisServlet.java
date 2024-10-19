@@ -54,12 +54,10 @@ import org.apache.axis2.util.OnDemandLogger;
 import org.apache.axis2.databinding.utils.BeanUtil;
 import org.apache.commons.httpclient.MultiThreadedHttpConnectionManager;
 
-import javax.servlet.ServletConfig;
-import javax.servlet.ServletContext;
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import javax.xml.namespace.QName;
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -79,7 +77,7 @@ import java.util.concurrent.CountDownLatch;
  * <li>There must be one instance of {@link TransportListener} for each protocol, but this servlet
  * may implement both HTTP and HTTPS.
  * <li>There is a collision between {@link TransportListener#destroy()} and
- * {@link javax.servlet.Servlet#destroy()}.
+ * {@link jakarta.servlet.Servlet#destroy()}.
  * </ul>
  * The {@link TransportListener} implementation is provided by {@link AxisServletListener}. An
  * instance of that class must be declared in <tt>axis2.xml</tt> for each protocol (HTTP/HTTPS) that
@@ -624,7 +622,7 @@ public class AxisServlet extends HttpServlet {
      * Preprocess the request. This will:
      * <ul>
      * <li>Set the context root if it is not set already (by calling
-     * {@link #initContextRoot(HttpServletRequest)}).
+     * {@link #initContextRoot(jakarta.servlet.http.HttpServletRequest)}).
      * <li>Remember the port number if port autodetection is enabled.
      * <li>Reject the request if no {@link AxisServletListener} has been registered for the
      * protocol.

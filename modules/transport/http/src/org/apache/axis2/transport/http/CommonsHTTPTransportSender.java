@@ -39,8 +39,8 @@ import org.apache.commons.httpclient.*;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
+import jakarta.servlet.http.HttpServletResponse;
 import javax.xml.stream.FactoryConfigurationError;
-import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.net.MalformedURLException;
@@ -339,7 +339,7 @@ public class CommonsHTTPTransportSender extends AbstractHandler implements
 
             // if sending a fault, set HTTP status code to 500
             if (msgContext.isFault()) {
-                servletBasedOutTransportInfo.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+                servletBasedOutTransportInfo.setStatus(jakarta.servlet.http.HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
             }
 
             Object customHeaders = msgContext.getProperty(HTTPConstants.HTTP_HEADERS);
